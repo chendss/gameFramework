@@ -3,6 +3,7 @@ class BlockGame extends BaseGame {
     super(...args)
     this.levelNumber = 0
     this.bindEvent()
+    log('不是特别科学啊2')
   }
 
   createScene () {
@@ -27,6 +28,7 @@ class BlockGame extends BaseGame {
 
   bindEvent = () => {
     bindDown('k', () => {
+      log('不是特别科学啊1')
       if (this.status === 'wait') {
         log('开始游戏了，打砖块', this.sceneDict)
         this.changeScene('scene0')
